@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Resume</title>
+  <link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
+  <style>
+  
+  	body {
+  		color: #CCCCCC;
+  		margin-left: 150px;
+  		margin-right: 150px;
+  		background-image: url(imgs/stardust.png);
+  		font-family: 'Dosis', sans-serif;
+  	}
+  	#address{
+  		text-align: center;
+  		margin-bottom: 5px;
+
+  	}
+  	#name{
+  		font-weight: bold;
+  		font-size: 25px;
+  	}
+
+  	a {
+  		color: #CCCCCC;
+  	}
+
+  	li{
+  		font-size: 13px;
+  	}
+
+  	ul.a{
+  		list-style-type: none;
+  		margin-top: 0px;
+  	}
+
+  	img {
+  		display: block;
+  		margin-left: auto;
+  		margin-right: auto;
+  	}
+
+
+  	
+  	
+
+  </style>
+ 
+</head>
+<body>
+	<div id="address">5858 Lucas Valley Road, Nicasio, CA 94946
+		<p id = "name"><strong>Luke Skywalker</strong></p>
+		<a href='skywalkerl@starwars.com'>skywalkerl@starwars.com</a>
+	</div>
+	<hr>
+<h2>Experience</h2>
+<hr>
+<div id="jobHistory">
+	<p id="descirber">4 ABY to Present   Jedi Order       Tython</p>
+<ul><strong>Grand Master of The Jedi Order</strong>
+	<li>Mentoring and training of Padawans</li>
+	<li>Provided leadership for the Jedi Order and Council</li>
+	<li>Saved the galaxy many times over</li>
+</ul>
+
+<p id="descirber">0 ABY to 4 ABY      Rebal Alliance        Yavin 4</p>
+<ul><strong>Commander of Rouge Squadron</strong>
+	<li>Piloted T-65 X-wing starfighter </li>
+	<li>engaged in multiple dog fights with Empiral starfighters</li>
+	<li>Responsible for destroying the Death Star in the battle of Yavin 4</li>
+</ul>
+
+<p id="descirber">23 BBY to 0 ABY      Owen Lars        Tatooine</p>
+<ul><strong>Moisture Farmer</strong>
+	<li>Repaired and mainatined moisture vaporators</li>
+	<li>Droid maintenance</li>
+	<li>Oversaw trade transactions with Jawas</li>
+</ul>
+</div>
+
+<hr>
+<div>
+	<h2>Skills</h2>
+	<ul class="a">
+		<li>Force sensitive</li>
+		<li>Expert pilot in T-65 X-wing starfighter and T-47 airspeeder</li>
+		<li>Expert in Form V lightsaber combat</li>	
+	</ul>	
+</div>
+<hr>
+<div id="education">
+	<h2>Education</h2>
+	<ul class="a">
+		
+		<li>Studied the Force under Jedi Grand Master Yoda</li>
+		<li>Studied the Force under Jedi Master Obi-Wan Kenobi</li>
+	</ul>
+</div>
+<hr>
+
+
+	</body>
+	<script type="text/javascript">
+		function randomImg(){
+			var randomNumber = Math.floor(Math.random() * 5) + 1;
+			var imgName = "img" + randomNumber;
+			document.write('<img src=imgs/' + imgName + '.png');
+		}
+		randomImg()
+	</script>
+</html>
